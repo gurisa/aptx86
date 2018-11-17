@@ -1,0 +1,374 @@
+/* 
+  helper style 
+*/
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-bolder {
+  font-weight: bolder;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-10 {
+  font-size: 10pt;
+}
+
+.font-12 {
+  font-size: 12pt;
+}
+
+.font-14 {
+  font-size: 14pt;
+}
+
+.font-16 {
+  font-size: 16pt;
+}
+
+.font-18 {
+  font-size: 18pt;
+}
+
+.font-22 {
+  font-size: 22pt;
+}
+
+.font-24 {
+  font-size: 24pt;
+}
+
+.font-36 {
+  font-size: 36pt;
+}
+
+.font-48{
+  font-size: 48pt;
+}
+
+.font-64{
+  font-size: 64pt;
+}
+
+.fluid {
+  width: 100%;
+}
+
+.fg-white {
+  color: #f2f3f6;
+}
+
+.fg-red {
+  color: #d13b27;
+}
+
+.fg-green {
+  color: #52b153;
+}
+
+.fg-yellow {
+  color: #dbd531;
+}
+
+.fg-orange {
+  color: #f2ae57;
+}
+
+.fg-blue {
+  color: #4b5cb9;
+}
+
+.fg-sky {
+  color: #67a8eb;
+}
+
+.fg-midnight {
+  color: #323535;
+}
+
+.fg-black {
+  color: #2f3030;
+}
+
+.fg-gray {
+  color: #a3a3a3;
+}
+
+.bg-white {
+  background-color: #f6f7fa;
+}
+
+.bg-purple {
+  background-color: #535594;
+}
+
+.bg-red {
+  background-color: #d13b27;
+}
+
+.bg-yellow {
+  background-color: #dbd531;
+}
+
+.bg-orange {
+  background-color: #f2ae57;
+}
+
+.bg-green {
+  background-color: #52b153;
+}
+
+.bg-tea {
+  background-color: #2f7e30;
+}
+
+.bg-blue {
+  background-color: #4b5cb9;
+}
+
+.bg-sky {
+  background-color: #67a8eb;
+}
+
+.bg-midnight {
+  background-color: #323535;
+}
+
+.bg-black {
+  background-color: #2f3030;
+}
+
+.bg-gray {
+  background-color: #a3a3a3;
+}
+
+.box-shadow {
+  box-shadow: 2px 2px #383838;
+}
+
+.mx-1 {
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.mx-3 {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.mx-5 {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.mx-7 {
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+.mx-9 {
+  margin-left: 9px;
+  margin-right: 9px;
+}
+
+.my-1 {
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.my-3 {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.my-5 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.my-7 {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.my-9 {
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
+body {
+  font-family: 'Niramit', sans-serif;
+  display: block;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;  
+}
+
+a.link {
+  text-decoration: none;  
+}
+
+a.link:hover,
+a.link:active,
+a.link:focus {
+  border-bottom: 2px solid;
+}
+
+a.brand,
+a.brand:hover,
+a.brand:active,
+a.brand:focus {
+  text-decoration: none;  
+}
+
+/* 
+  content style
+*/
+
+.container {
+
+}
+
+.row {
+  display: grid;
+  /* grid-gap: 5px; */
+  /* grid-template-columns: repeat(12, minmax(1fr, 350px)); */
+  grid-template-columns: repeat(12, 1fr);
+  overflow: auto;
+  resize: horizontal;
+}
+
+.col-12 {
+  grid-column: span 12;
+  padding: 10px;
+}
+
+.col-11 {
+  grid-column: span 11;
+  padding: 10px;
+}
+
+.col-10 {
+  grid-column: span 10;
+  padding: 10px;
+}
+
+.col-9 {
+  grid-column: span 9;
+  padding: 10px;
+}
+
+.col-8 {
+  grid-column: span 8;
+  padding: 10px;
+}
+
+.col-7 {
+  grid-column: span 7;
+  padding: 10px;
+}
+
+.col-6 {
+  grid-column: span 6;
+  padding: 10px;
+}
+
+.col-5 {
+  grid-column: span 5;
+  padding: 10px;
+}
+
+.col-4 {
+  grid-column: span 4;
+  padding: 10px;
+}
+
+.col-3 {
+  grid-column: span 3;
+  padding: 10px;
+}
+
+.col-2 {
+  grid-column: span 2;
+  padding: 10px;
+}
+
+.col-1 {
+  grid-column: span 1;
+  padding: 10px;
+}
+
+.card {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 3px 2px #5d5d5d;
+  background-color: #f5f2f2;  
+}
+
+.card .card-header {
+  font-size: 14pt;
+  border-bottom: 2px dashed #2c2b2b;  
+}
+
+.card .card-body {
+  font-size: 12pt;
+}
+
+.row-tile {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 4fr));
+  grid-gap: 10px;
+  overflow: auto;
+  resize: horizontal; 
+  padding: 10px;   
+}
+
+.row-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
+  grid-gap: 10px;
+  overflow: auto;
+  resize: horizontal; 
+  padding: 10px; 
+}
+
+.row-footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 4fr));
+  overflow: auto;
+  resize: horizontal;
+  padding: 10px;  
+}
+
+#leaflet-map {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.unused-trash-later {
+  /* grid-column-start: 1;
+  grid-column-end: -1; */
+  /* or */
+  grid-column: 1/-1;
+  grid-auto-rows: 80px;
+  grid-template-rows: 50px;
+  padding: 10px;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Mobile Web Specialist | Raka S.W.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Niramit" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" />  
+  <link rel="stylesheet" type="text/css" media="all" href="assets/css/default.css" /> 
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+  <link rel="icon" type="image/x-icon" href="assets/image/favicon.png" />
+</head>
+<body>
+  
+  <div class="container">
+    <div class="row box-shadow">
+      <div class="col-10">
+        <a href="" class="brand text-left text-bolder font-18 fg-black">APTX86</a>
+      </div>
+      <div class="col-2 text-right">
+        <i id="btn-ham" class="fas fa-bars font-22"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col col-4">
+        <div class="card">
+          <div class="card-body">
+            <div class="text-center" onclick="changeMenu('1');">
+              <i class="fas fa-chart-bar font-22"></i>
+              <h3 class="my-1">Film</h3>   
+            </div>         
+          </div>              
+        </div>
+      </div>
+      <div class="col col-4">
+        <div class="card">
+          <div class="card-body">
+            <div class="text-center" onclick="changeMenu('2');">
+              <i class="fas fa-map-marked-alt font-22"></i>
+              <h3 class="my-1">Peta</h3>  
+            </div>          
+          </div>              
+        </div>
+      </div>
+      <div class="col col-4">
+        <div class="card">
+          <div class="card-body">
+            <div class="text-center" onclick="changeMenu('3');">
+              <i class="fas fa-spinner font-22"></i>
+              <h3 class="my-1">PWA</h3>
+            </div>
+          </div>              
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="menu-1">
+    <div class="row">      
+      <div class="col-8">        
+        <div class="card">
+          <div class="card-body" id="movie-content">            
+            <p class="text-center">Sedang memuat...</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <div class="card-header">
+            Navigation section
+          </div>
+          <div class="card-body">
+            And we can navigate our map from the nav located here, stay tuned!
+          </div>
+        </div> 
+      </div>
+    </div>    
+  </div>
+
+  <div class="container" id="menu-2">
+    <div class="row">      
+      <div class="col-8">        
+        <div class="card">
+          <div class="card-body">
+            <div id="leaflet-map"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <div class="card-header">
+            Navigation section
+          </div>
+          <div class="card-body">
+            And we can navigate our map from the nav located here, stay tuned!
+          </div>
+        </div> 
+      </div>
+    </div>    
+  </div>
+
+  <div class="container" id="menu-3">
+    <div class="row">      
+      <div class="col-8">        
+        <div class="card">
+          <div class="card-body">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <div class="card-header">
+            Navigation section
+          </div>
+          <div class="card-body">
+            And we can navigate our map from the nav located here, stay tuned!
+          </div>
+        </div> 
+      </div>
+    </div>    
+  </div>
+
+  <div class="container">
+    <div class="row bg-green">
+      <div class="col-12"></div>
+    </div>
+    <div class="row-footer bg-black fg-white">
+      <div class="">     
+        <h2>APTX86</h2>
+        <p>Supported by Google & Inixindo, incorporated with good mentor and friends, thank you all!</p>        
+      </div>
+      <div class="">
+        <ul>
+          <li>Did you know cat is kucing?</li>
+          <li>Did you know cat is kucing?</li>
+          <li>Did you know cat is kucing?</li>
+          <li>Did you know cat is kucing?</li>
+        </ul>
+      </div>
+      <div class="">
+        <ul>
+          <li>Did you know cat is kucing?</li>
+          <li>Did you know cat is kucing?</li>
+          <li>Did you know cat is kucing?</li>
+          <li>Did you know cat is kucing?</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row bg-midnight fg-white">
+      <div class="col-12">
+        <p class="text-center">
+          Copyright &copy; 2018 <a class="fg-white link" href="https://www.gurisa.com/" target="_blank">Gurisa Devs </a>
+        </p>        
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/default.js"></script>
+  <script src="assets/js/map.js"></script>
+  <script src="assets/js/movie.js"></script>
+</body>
+</html>

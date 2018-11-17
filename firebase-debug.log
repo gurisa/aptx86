@@ -1,0 +1,45 @@
+[debug] [2018-11-17T08:36:33.394Z] ----------------------------------------------------------------------
+[debug] [2018-11-17T08:36:33.399Z] Command:       D:\nodejs\node.exe C:\Users\toor\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-11-17T08:36:33.399Z] CLI Version:   5.0.1
+[debug] [2018-11-17T08:36:33.399Z] Platform:      win32
+[debug] [2018-11-17T08:36:33.399Z] Node Version:  v8.9.4
+[debug] [2018-11-17T08:36:33.401Z] Time:          Sat Nov 17 2018 15:36:33 GMT+0700 (SE Asia Standard Time)
+[debug] [2018-11-17T08:36:33.402Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-11-17T08:36:33.442Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-11-17T08:36:33.443Z] > authorizing via signed-in user
+[debug] [2018-11-17T08:36:33.444Z] [iam] checking project aptx86 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2018-11-17T08:36:33.448Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-11-17T08:36:33.451Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-11-17T08:36:54.737Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-17T08:36:54.746Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/aptx86:testIamPermissions  
+
+[debug] [2018-11-17T08:37:28.506Z] Error: read ECONNRESET
+    at _errnoException (util.js:1022:11)
+    at TLSWrap.onread (net.js:615:25)
+[error] 
+[error] Error: Server Error. read ECONNRESET
+[debug] [2018-11-17T18:44:49.436Z] ----------------------------------------------------------------------
+[debug] [2018-11-17T18:44:49.439Z] Command:       D:\nodejs\node.exe C:\Users\toor\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-11-17T18:44:49.440Z] CLI Version:   5.0.1
+[debug] [2018-11-17T18:44:49.440Z] Platform:      win32
+[debug] [2018-11-17T18:44:49.440Z] Node Version:  v8.9.4
+[debug] [2018-11-17T18:44:49.441Z] Time:          Sun Nov 18 2018 01:44:49 GMT+0700 (SE Asia Standard Time)
+[debug] [2018-11-17T18:44:49.442Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-11-17T18:44:49.463Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-11-17T18:44:49.464Z] > authorizing via signed-in user
+[debug] [2018-11-17T18:44:49.464Z] [iam] checking project aptx86 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2018-11-17T18:44:49.468Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-11-17T18:44:49.469Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-11-17T18:44:50.093Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-17T18:44:50.116Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/aptx86:testIamPermissions  
+
+[debug] [2018-11-17T18:45:11.197Z] Error: connect ETIMEDOUT 74.125.24.95:443
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1182:14)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 74.125.24.95:443
