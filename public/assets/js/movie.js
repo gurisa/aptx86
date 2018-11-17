@@ -1,5 +1,5 @@
 
-var url = 'http://www.omdbapi.com/?apikey=ff1d8f00&s=batman';
+var url = 'https://www.omdbapi.com/?apikey=ff1d8f00&s=batman';
 
 function fetchMovie(url, method) {
   return fetch(url, {method: method}).then(function(data) {
