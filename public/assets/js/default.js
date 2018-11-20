@@ -15,7 +15,7 @@ function changeMenu(menu) {
 }
 
 (function() {
-  changeMenu(2);
+  changeMenu(1);
 
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('worker.js')
