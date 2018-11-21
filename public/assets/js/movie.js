@@ -20,7 +20,7 @@ function fetchMovie(url, method = 'get') {
         html += '</a>';
         html += '</div>';
         html += '<div class="col-8">';
-        html += '<a class="link" href="https://www.imdb.com/title/' + val.imdbID + '" target="_blank"><h2>' + val.Title + '</h2></a>';
+        html += '<a class="link" href="https://www.imdb.com/title/' + val.imdbID + '" target="_blank" style="color: black;" class="font-14 text-bold">' + val.Title + '</a>';
         html += '<p>' + val.Type + '<br/>';
         html += '' + val.Year + '</p>';
         html += '</div>';

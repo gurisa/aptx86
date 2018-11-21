@@ -10,7 +10,6 @@ var cache_source = [
   'https://use.fontawesome.com/releases/v5.4.1/css/all.css',
   'https://unpkg.com/leaflet@1.3.4/dist/leaflet.css',
   'https://unpkg.com/leaflet@1.3.4/dist/leaflet.js',
-  // 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZ3VyaXNhIiwiYSI6ImNqbmZoNDN3ZzJzY2gzcG9ld3JoMzBjZjIifQ.ToUmEgZPdcmjFptNXFbdQA',
   'index.html',
   'index.html?utm_source=native',
   '404.html',
