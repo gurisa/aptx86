@@ -20,7 +20,7 @@ var cache_source = [
   './?utm_source=native',
   '404.html',
 
-  'https://www.omdbapi.com/?apikey=ff1d8f00&s=Detective Conan',
+  // 'https://www.omdbapi.com/?apikey=ff1d8f00&s=Detective Conan',
 ];
 
 self.addEventListener('install', function(event) {
@@ -43,20 +43,22 @@ self.addEventListener('fetch', function(event) {
       if (response) {
         return response;
       }
-      if (event.request.url.endsWith('.jpg') || event.request.url.endsWith('.png')) {
-        return fetch('./assets/image/default/movie.jpg');
-      }
       else {
-        return fetch(event.request).then(function(response) {
-          if (!response.ok) {
-            throw Error(response.statusText);
-          }
-          return caches.open(cache_static).then(function(cache) {
-            cache.put(event.request, response.clone());
-            return response;
+        if (event.request.url.endsWith('.jpg') || event.request.url.endsWith('.png')) {
+          return fetch('./assets/image/default/movie.jpg');
+        }
+        else {
+          return fetch(event.request).then(function(response) {
+            if (!response.ok) {
+              throw Error(response.statusText);
+            }
+            return caches.open(cache_static).then(function(cache) {
+              cache.put(event.request, response.clone());
+              return response;
+            });
           });
-        });
-      }
+        }
+      }      
     }).catch(function(error) {
       // return caches.open(cache_static).then(function(cache) {
       //   return cache.match('404.html');
