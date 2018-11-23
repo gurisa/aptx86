@@ -43,7 +43,7 @@ self.addEventListener('fetch', function(event) {
       if (response) {
         return response;
       }
-      if (event.request.url.endsWith('.jpg')) {
+      if (event.request.url.endsWith('.jpg') || event.request.url.endsWith('.png')) {
         return fetch('./assets/image/default/movie.jpg');
       }
       else {
