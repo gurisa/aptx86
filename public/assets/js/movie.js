@@ -1,5 +1,5 @@
 var query = document.getElementById('movie-search');
-query = (query.value == '') ? 'batman' : query.value;
+query = (query.value == '') ? 'Detective Conan' : query.value;
 
 var url = 'https://www.omdbapi.com/?apikey=ff1d8f00&s=';
 

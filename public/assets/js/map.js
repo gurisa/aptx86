@@ -2,7 +2,7 @@ const photo = document.getElementById('map-photo');
 const title = document.getElementById('map-title');
 const description = document.getElementById('map-description');
 
-var map = L.map('leaflet-map').setView([-6.932306, 107.594005], 14);
+var map = L.map('leaflet-map').setView([-6.930346, 107.591681], 14);
 map.scrollWheelZoom.disable();
 
 var marker = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZ3VyaXNhIiwiYSI6ImNqbmZoNDN3ZzJzY2gzcG9ld3JoMzBjZjIifQ.ToUmEgZPdcmjFptNXFbdQA', {
