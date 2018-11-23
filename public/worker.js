@@ -20,7 +20,7 @@ var cache_source = [
   './?utm_source=native',
   '404.html',
 
-  // 'https://www.omdbapi.com/?apikey=ff1d8f00&s=batman',
+  'https://www.omdbapi.com/?apikey=ff1d8f00&s=Detective Conan',
 ];
 
 self.addEventListener('install', function(event) {
