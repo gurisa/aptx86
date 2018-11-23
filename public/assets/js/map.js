@@ -34,7 +34,7 @@ for (var place of places) {
 function showDetail(place) {
   title.innerHTML = place.name;
   description.innerHTML = place.description;
-  photo.setAttribute('src', 'assets/image/' + place.photo);
+  photo.setAttribute('src', 'assets/image/place/' + place.photo);
   map.setView([place.location[0], place.location[1]], 13);
 }
 showDetail(places[places.length - 1]);

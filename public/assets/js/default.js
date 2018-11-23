@@ -1,9 +1,20 @@
 
-if (ham = document.getElementById('btn-ham')) {
-  ham.addEventListener('click', function() {
-    alert('hey, open the door pleasee!');
-  });
-}
+
+var show = function (elem) {
+	elem.style.display = 'block';
+};
+
+var hide = function (elem) {
+	elem.style.display = 'none';
+};
+
+var toggle = function (elem) {
+	if (window.getComputedStyle(elem).display === 'block') {
+		hide(elem);
+		return;
+	}
+	show(elem);
+};
 
 function changeMenu(menu) {
   if (menu && menu >= 1 && menu <= 3) {
@@ -12,6 +23,13 @@ function changeMenu(menu) {
     }
     document.getElementById('menu-' + menu).style.display = 'block';   
   }
+}
+
+let ham = document.getElementById('btn-ham');
+if (ham) {
+  ham.addEventListener('click', function() {
+    toggle(document.getElementById('bottom-navbar'));
+  });
 }
 
 (function() {

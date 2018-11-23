@@ -2,11 +2,12 @@ var cache_static = 's-aptx86-v1';
 var cache_source = [
   // 'manifest.json',
   'assets/image/icon/icon-x144.png',
-  'assets/image/braga.jpg',
-  'assets/image/citylink.jpg',
-  'assets/image/mikomall.jpg',
-  'assets/image/paskal.jpg',
-  'assets/image/transmart.jpg',
+  'assets/image/place/braga.jpg',
+  'assets/image/place/citylink.jpg',
+  'assets/image/place/mikomall.jpg',
+  'assets/image/place/paskal.jpg',
+  'assets/image/place/transmart.jpg',
+  'assets/image/default/movie.jpg',
 
   'assets/css/default.css',
   'assets/js/default.js',
@@ -42,15 +43,20 @@ self.addEventListener('fetch', function(event) {
       if (response) {
         return response;
       }
-      return fetch(event.request).then(function(response) {
-        if (!response.ok) {
-          throw Error(response.statusText);
-        }
-        return caches.open(cache_static).then(function(cache) {
-          cache.put(event.request, response.clone());
-          return response;
+      if (event.request.url.endsWith('.jpg')) {
+        return fetch('./assets/image/default/movie.jpg');
+      }
+      else {
+        return fetch(event.request).then(function(response) {
+          if (!response.ok) {
+            throw Error(response.statusText);
+          }
+          return caches.open(cache_static).then(function(cache) {
+            cache.put(event.request, response.clone());
+            return response;
+          });
         });
-      });
+      }
     }).catch(function(error) {
       // return caches.open(cache_static).then(function(cache) {
       //   return cache.match('404.html');
