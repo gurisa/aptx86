@@ -263,6 +263,19 @@ a.brand:focus {
 
 /*  content style */
 
+.container {
+
+}
+
+.row {
+  display: grid;
+  /* grid-gap: 5px; */
+  /* grid-template-columns: repeat(12, minmax(1fr, 350px)); */
+  grid-template-columns: repeat(12, 1fr);
+  overflow: auto;
+  resize: horizontal;
+}
+
 [class*="col-"] {
   padding: 10px;
 }
@@ -315,7 +328,7 @@ a.brand:focus {
   grid-column: span 1;
 }
 
-@media only screen and (min-width: 360px) {
+@media only screen and (max-width: 599px) {
   .col-xs-1 { 
     grid-column: span 1;    
   }
@@ -508,19 +521,6 @@ a.brand:focus {
   .col-xl-12 { 
     grid-column: span 12;
   }
-}
-
-.container {
-
-}
-
-.row {
-  display: grid;
-  /* grid-gap: 5px; */
-  /* grid-template-columns: repeat(12, minmax(1fr, 350px)); */
-  grid-template-columns: repeat(12, 1fr);
-  overflow: auto;
-  resize: horizontal;
 }
 
 .card {
