@@ -12,6 +12,7 @@ var cache_source = [
   'assets/css/default.css',
   'assets/js/default.js',
   'assets/js/map.js',
+  'assets/js/movie.js',
   'https://fonts.googleapis.com/css?family=Niramit',
   'https://use.fontawesome.com/releases/v5.4.1/css/all.css',
 

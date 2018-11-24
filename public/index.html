@@ -32,9 +32,7 @@
     <div class="row">
       <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
         <div class="card">
-          <div class="card-header">
-            Navigasi
-          </div>
+          <div class="card-header">Navigasi</div>
           <div class="card-body">
             <input type="text" name="" id="movie-search" placeholder="Cari film.." class="my-5" style="width: 100%; height: 25px;" />
           </div>
@@ -55,7 +53,7 @@
       <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
         <div class="card">
           <div class="card-header">
-            <h3 id="map-title"></h3>
+            <span id="map-title"></span>
           </div>
           <div class="card-body">
             <div class="row">
@@ -83,18 +81,16 @@
     <div class="row"> 
       <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
         <div class="card">
-          <div class="card-header">
-            Navigasi
-          </div>
+          <div class="card-header">Navigasi</div>
           <div class="card-body">
-            And we can navigate our map from the nav located here, stay tuned!
+            <input type="text" name="" id="trailer-search" placeholder="Cari trailer.." class="my-5" style="width: 100%; height: 25px;" />
           </div>
         </div> 
       </div>     
       <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">        
         <div class="card">
-          <div class="card-body">
-
+          <div class="card-body" id="trailer-content">            
+            <p class="text-center">Sedang memuat...</p>
           </div>
         </div>
       </div>
@@ -104,7 +100,6 @@
   <div style="margin-bottom: 100px;"></div>
 
   <div id="bottom-navbar" class="bottom-navbar container" style="position: fixed; bottom: 0; left: 0; z-index: 999; width: 100%;">
-    <div class="bg-green" style="padding: 5 0;"></div>
     <div class="row bg-white">
       <div class="col col-4">
         <div class="card pointer">
@@ -113,6 +108,16 @@
               <i class="fas fa-film font-22"></i>
               <h3 class="my-1">Film</h3>   
             </div>         
+          </div>              
+        </div>
+      </div>      
+      <div class="col col-4">
+        <div class="card pointer">
+          <div class="card-body">
+            <div class="text-center" onclick="changeMenu('3');">
+              <i class="fab fa-youtube font-22"></i>
+              <h3 class="my-1">Trailer</h3>
+            </div>
           </div>              
         </div>
       </div>
@@ -126,21 +131,12 @@
           </div>              
         </div>
       </div>
-      <div class="col col-4">
-        <div class="card pointer">
-          <div class="card-body">
-            <div class="text-center" onclick="changeMenu('3');">
-              <i class="fas fa-spinner font-22"></i>
-              <h3 class="my-1">PWA</h3>
-            </div>
-          </div>              
-        </div>
-      </div>
     </div>
   </div>
 
   <script src="assets/js/default.js"></script>
   <script src="assets/js/map.js"></script>
   <script src="assets/js/movie.js"></script>
+  <script src="assets/js/trailer.js"></script>
 </body>
 </html>
